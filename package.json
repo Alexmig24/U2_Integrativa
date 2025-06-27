@@ -2,18 +2,18 @@
   "name": "u2_integrativa",
   "version": "1.0.0",
   "description": "Este repositorio contiene el desarrollo de las actividades correspondientes a la Unidad 2 de la asignatura Programación Integrativa de Componentes. Incluye ejercicios prácticos, componentes personalizados, uso de tecnologías web modernas y documentación técnica asociada.",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack serve --open --hot"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Alexmig24/U2_Integrativa.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alexander Quizhpe",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Alexmig24/U2_Integrativa/issues"
   },
@@ -22,7 +22,9 @@
     "lit-element": "^4.2.0"
   },
   "devDependencies": {
-    "typescript": "^5.8.3",
-    "vite": "^7.0.0"
+    "html-webpack-plugin": "^5.6.3",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
   }
 }
