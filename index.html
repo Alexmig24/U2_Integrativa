@@ -3,10 +3,27 @@
 <head>
     <meta charset="UTF-8" />
     <title>ESPE Progress Bar</title>
+    <style>
+        body {
+          min-height: 100vh;
+          margin: 0;
+          display: flex;
+          justify-content: center; 
+          align-items: center;    
+          background: #f5f5f5;
+        }
+        .container {
+          width: 400px;
+        }
+    </style>
     <script type="module" src="./src/index.js"></script>
 </head>
 <body>
-    <espe-progress-bar percentage="100" theme="#003C71"></espe-progress-bar>
-    <espe-progress-bar percentage="10" theme="#003C71"></espe-progress-bar>
+    <div class="container">
+        <espe-progress-bar percentage="200" theme="#003C71"></espe-progress-bar>
+        <espe-progress-bar percentage="10" theme="#ffffff"></espe-progress-bar>
+        <espe-progress-bar percentage="80" color1="#123456" color2="#abcdef"></espe-progress-bar>
+        
+    </div>
 </body>
 </html>
